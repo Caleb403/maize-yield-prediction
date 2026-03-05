@@ -126,7 +126,7 @@ st.markdown("""
 # LOAD DATA AND MODELS
 # =============================================================================
 
-BASE = os.path.expanduser("~/Desktop/Maize_Yield_Submission")
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_resource
 def load_models():
